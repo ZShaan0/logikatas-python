@@ -1,3 +1,5 @@
+"""This module contains a function that takes a number and
+returns a roman numeral string representation of the number"""
 def roman_numeral_encoder(num):
     roman_numerals = [
             (1000, 'M'),
@@ -14,7 +16,7 @@ def roman_numeral_encoder(num):
             (4, 'IV'),
             (1, 'I')
             ]
-    
+
     roman_string = ""
 
     for value, roman_char in roman_numerals:

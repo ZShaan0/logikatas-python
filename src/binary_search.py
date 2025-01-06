@@ -1,3 +1,5 @@
+"""This module contains a function that uses a binary search algorithm o search for a
+number in a list and return its index, or returns -1 if the number is not found."""
 def binary_search(num_list, target,  start = 0, end = None):
     if end is None:
         end = len(num_list) - 1
@@ -10,7 +12,7 @@ def binary_search(num_list, target,  start = 0, end = None):
 
     if mid_point == target:
         return mid_index
-    elif mid_point < target:
+    if mid_point < target:
         return binary_search(num_list, target, mid_index + 1, end)
-    else:
-        return binary_search(num_list, target, start, end = mid_index - 1)
+
+    return binary_search(num_list, target, start, end = mid_index - 1)

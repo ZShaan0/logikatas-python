@@ -1,3 +1,5 @@
+"""This module contains a function which takes a string of any length
+and a number, n, and shifts every vowel in the string n positions to the right"""
 def vowel_shift(some_string, n):
     vowels = ['a','e','i','o','u','A','E','I','O','U']
 
